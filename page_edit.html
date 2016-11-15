@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Page</title>
+  </head>
+  <body>
+    <div>
+      <h1>{{pageName}}</h1>
+      <div class="content">
+        <textarea ng-model="page.content" rows="8" cols="40"></textarea>
+      </div>
+    </div>
+    <button><a ui-sref="page_view({page_name : pageName})">Done</a></button>
+  </body>
+</html>
